@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".BoardOne">
+
+    <EditText
+        android:id="@+id/board_one_user_topic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:hint="Add Topic"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/errorbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/erroroutline"
+        app:layout_constraintBottom_toTopOf="@id/noteone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/board_one_user_topic" />
+
+    <TextView
+        android:id="@+id/noteone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/relativelayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_one_user_topic" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_one_user_topic"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/on1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/off1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@id/on1"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+
+        <TextView
+            android:id="@+id/on2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/on1"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/off2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/off1"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/on2"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

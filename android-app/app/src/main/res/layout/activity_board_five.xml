@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Board_five">
+
+
+    <EditText
+        android:id="@+id/board_five_user_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ADD TOPIC"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativelayout_boardfive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notefive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/erroroutline"
+        android:text="Please note, Topic is case sensitive and it take value as a string \n if your topic is correct only then it can connect to the hardware \n Please be careful while adding topic "
+        app:layout_constraintBottom_toTopOf="@+id/relativelayout_boardfive"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_five_user_topic" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_boardfive"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/onone_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/offone_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@+id/onone_boardfive"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/ontwo_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onone_boardfive"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp"
+
+            />
+
+        <TextView
+            android:id="@+id/offtwo_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offone_boardfive"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@+id/ontwo_boardfive"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/onthree_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ontwo_boardfive"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/offthree_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ontwo_boardfive"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@+id/onthree_boardfive"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/onfour_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onthree_boardfive"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/offfour_boardfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onthree_boardfive"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/onfour_boardfive"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

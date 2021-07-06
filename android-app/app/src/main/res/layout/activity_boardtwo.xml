@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boardtwo">
+
+    <EditText
+        android:id="@+id/board_two_user_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ADD TOPIC"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/errorbuttontwo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/erroroutline"
+        app:layout_constraintBottom_toTopOf="@id/notethree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_two_user_topic" />
+
+    <TextView
+        android:id="@+id/notethree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/relativelayout_boardtwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_two_user_topic" />
+    <RelativeLayout
+        android:id="@+id/relativelayout_boardtwo"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_two_user_topic">
+
+        <TextView
+            android:id="@+id/onone_boardtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/offone_boardtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@+id/onone_boardtwo"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/ontwo_boardtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onone_boardtwo"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="ON "
+            android:textColor="#C6FF00"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/offtwo_boardtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offone_boardtwo"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/ontwo_boardtwo"
+            android:background="@drawable/editext"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:text="OFF "
+            android:textColor="#D50000"
+            android:textSize="50dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
