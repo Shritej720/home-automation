@@ -44,7 +44,7 @@ void setup_wifi() {
 
   Serial.println("");
   Serial.println("WiFi connected");
-  Serial.println("IP address: ");
+  Serial.println("IP address: "); //it will desplay ip address and wifi connection on serial monito
   Serial.println(WiFi.localIP());
 }
 
